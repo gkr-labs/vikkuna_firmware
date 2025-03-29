@@ -32,11 +32,17 @@
 #define ADDR_XINPUT_IN 0x81
 #define ADDR_XINPUT_OUT 0x02
 
+#ifdef DEVICE_IS_VIKKUNA
+#define STRING_VENDOR "GKR"
+#else
 #define STRING_VENDOR "Input Labs"
+#endif
 
+#define STRING_PRODUCT_VIKKUNA "Vikkuna"
 #define STRING_PRODUCT_ALPAKKA "Alpakka"
 #define STRING_PRODUCT_DONGLE "Dongle"
 
+#define STRING_VERSION_VIKKUNA_V0 "v0"
 #define STRING_VERSION_ALPAKKA_V0 "v0"
 #define STRING_VERSION_ALPAKKA_V1 "v1"
 #define STRING_VERSION_DONGLE_V1 "v1"
