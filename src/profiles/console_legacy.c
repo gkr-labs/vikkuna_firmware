@@ -64,8 +64,14 @@ void config_profile_default_console_legacy(CtrlProfile *profile){
         .mode=NORMAL,
         .actions={GAMEPAD_START},
     };
-    profile->sections[SECTION_SELECT_2].button = (CtrlButton){};
-    profile->sections[SECTION_START_2].button = (CtrlButton){};
+    profile->sections[SECTION_SELECT_2].button = (CtrlButton){
+        .mode=NORMAL,
+        .actions={KEY_F12},
+    };
+    profile->sections[SECTION_START_2].button = (CtrlButton){
+        .mode=NORMAL,
+        .actions={KEY_N},
+    };
 
     // Triggers.
     profile->sections[SECTION_L1].button = (CtrlButton){
@@ -86,7 +92,7 @@ void config_profile_default_console_legacy(CtrlProfile *profile){
     };
     profile->sections[SECTION_L4].button = (CtrlButton){
         .mode=NORMAL,
-        .actions={GAMEPAD_A},
+        .actions={GAMEPAD_START},
     };
     profile->sections[SECTION_R4].button = (CtrlButton){
         .mode=NORMAL,

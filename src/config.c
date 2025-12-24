@@ -129,7 +129,7 @@ void config_write_init() {
     config_cache = (Config){
         .header = NVM_CONTROL_BYTE,
         .config_version = NVM_CONFIG_VERSION,
-        .profile = 1,
+        .profile = 7,
         .protocol = 0,
         .sens_mouse = 0,
         .sens_touch = 1,

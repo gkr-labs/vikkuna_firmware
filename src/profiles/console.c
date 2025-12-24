@@ -67,7 +67,7 @@ void config_profile_default_console(CtrlProfile *profile){
     };
     profile->sections[SECTION_SELECT_2].button = (CtrlButton){
         .mode=NORMAL,
-        .actions={KEY_M},
+        .actions={KEY_F12},
     };
     profile->sections[SECTION_START_2].button = (CtrlButton){
         .mode=NORMAL,
@@ -93,11 +93,11 @@ void config_profile_default_console(CtrlProfile *profile){
     };
     profile->sections[SECTION_L4].button = (CtrlButton){
         .mode=NORMAL,
-        .actions={KEY_SPACE},
+        .actions={GAMEPAD_START},
     };
     profile->sections[SECTION_R4].button = (CtrlButton){
         .mode=NORMAL,
-        .actions={KEY_CONTROL_LEFT},
+        .actions={GAMEPAD_R3},
     };
 
     // Thumbstick (left).

@@ -77,8 +77,8 @@ void config_profile_default_fps_fusion(CtrlProfile *profile){
     };
     profile->sections[SECTION_SELECT_2].button = (CtrlButton){
         .mode=NORMAL,
-        .actions={KEY_M},
-        .hint="Map",
+        .actions={KEY_F12},
+        .hint="Screenshot",
     };
     profile->sections[SECTION_START_2].button = (CtrlButton){
         .mode=NORMAL,
